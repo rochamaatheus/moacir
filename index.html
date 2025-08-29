@@ -27,50 +27,17 @@
     <!--Custom-->
     <link rel="stylesheet" href="assets/css/custom.css" />
     <style>
-      /* ===================================================================
-   CSS Responsivo para Corrigir Títulos em Telas Pequenas
-   =================================================================== */
-
-      /*
- * Aplica estas regras apenas em telas com largura máxima de 768px,
- * o que inclui a maioria dos celulares e tablets na vertical.
-*/
       @media screen and (max-width: 768px) {
-        /*
-   * Seleciona especificamente o título do projeto para
-   * reduzir seu tamanho em dispositivos móveis.
-  */
         h3.vlt-project-title {
-          /*
-     * Reduz o tamanho da fonte para evitar que o texto seja cortado.
-     * Experimente valores entre 2.2rem e 2.8rem para ver qual
-     * se encaixa melhor no seu design.
-    */
           font-size: 3rem;
 
-          /*
-     * Ajusta a altura da linha para que, caso o título precise
-     * de duas linhas, o espaçamento entre elas seja agradável.
-    */
           line-height: 1.25;
 
-          /*
-     * Medida de segurança: força a quebra de palavras muito longas
-     * que poderiam estourar o layout.
-    */
           word-break: break-word;
         }
       }
-      /* =================================================================== */
-      /* CÓDIGO RESPONSIVO COMPLETO PARA O PROJETO MOACIR          */
-      /* =================================================================== */
 
-      /* Regra #1: Estilos para TABLETS E CELULARES (telas até 992px)
-  Esta é a base para todas as telas que não são desktop.
-*/
       @media (max-width: 992px) {
-        /* --- VISIBILIDADE DA IMAGEM DE FUNDO --- */
-        /* Força a troca de imagem de fundo para a versão mobile/tablet */
         .vlt-section__ken-burn-background.has-mobile-image img:first-of-type {
           display: none !important; /* Esconde a imagem de desktop */
         }
@@ -133,10 +100,6 @@
         }
       }
 
-      /* Regra #2: Ajuste fino APENAS PARA CELULARES (telas até 767px)
-  Esta regra herda tudo da anterior e apenas sobrepõe o que precisa ser 
-  menor para telas pequenas.
-*/
       @media (max-width: 767px) {
         /* Reduz o tamanho dos textos para caber melhor em celulares */
         .vlt-large-heading {
