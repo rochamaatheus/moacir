@@ -27,6 +27,40 @@
     <!--Custom-->
     <link rel="stylesheet" href="assets/css/custom.css" />
     <style>
+      /* ===================================================================
+   CSS Responsivo para Corrigir Títulos em Telas Pequenas
+   =================================================================== */
+
+      /*
+ * Aplica estas regras apenas em telas com largura máxima de 768px,
+ * o que inclui a maioria dos celulares e tablets na vertical.
+*/
+      @media screen and (max-width: 768px) {
+        /*
+   * Seleciona especificamente o título do projeto para
+   * reduzir seu tamanho em dispositivos móveis.
+  */
+        h3.vlt-project-title {
+          /*
+     * Reduz o tamanho da fonte para evitar que o texto seja cortado.
+     * Experimente valores entre 2.2rem e 2.8rem para ver qual
+     * se encaixa melhor no seu design.
+    */
+          font-size: 3rem;
+
+          /*
+     * Ajusta a altura da linha para que, caso o título precise
+     * de duas linhas, o espaçamento entre elas seja agradável.
+    */
+          line-height: 1.25;
+
+          /*
+     * Medida de segurança: força a quebra de palavras muito longas
+     * que poderiam estourar o layout.
+    */
+          word-break: break-word;
+        }
+      }
       /* =================================================================== */
       /* CÓDIGO RESPONSIVO COMPLETO PARA O PROJETO MOACIR          */
       /* =================================================================== */
